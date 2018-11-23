@@ -1,0 +1,97 @@
+#dform_page_content h1 {
+    font-weight: bold !important;
+    font-size: 20px !important
+}
+
+#dform_page_content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#dform_page_content .option_element,
+#dform_page_content .remove_element {
+
+    display: none !important;
+}
+
+#dform_page_content .dFormElement {
+    border: none
+}
+
+#dform_page_content .err {
+    color: red;
+}
+
+#dform_page_content select {
+    width: 150px !important;
+}
+
+#dform_page_content textarea {
+    width: 300px !important;
+    height: 100px;
+}
+
+#dform_page_content table {
+    color: #6E5757 !important;
+    font-family: 'Verdana';
+    padding-top: 10px;
+    width: 100% !important;
+}
+
+#dform_page_content table th {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    padding: 5px !important;
+}
+
+#dform_page_content table td {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+#dform_page_content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dform_page_content .lef_label {
+    width: 30%;
+    display: block;
+    float: left
+}
+
+#dform_page_content .dFormElement > div {
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#dform_page_content .dFormElement .remove_element {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    color: red;
+
+}
+
+#dform_page_content .able_edit {
+    cursor: text;
+    display: inline;
+}
+
+#dform_page_content .lef_label {
+    width: 30%;
+    display: block;
+    float: left
+}
+
+#dform_page_content .dFormElement textarea {
+    width: auto
+}
+
+#dform_page_content .dFormElement > div > div {
+    display: block;
+    margin-left: 30%;
+}

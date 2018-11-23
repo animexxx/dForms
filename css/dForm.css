@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : style
     Created on : 13-11-2012, 23:13:21
     Author     : Duy
@@ -6,127 +6,207 @@
         Purpose of the stylesheet follows.
 */
 
-#dForm{
-	display: block;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0px;
-	background: #000;
-	z-index: 9999;
-	height: 100%;
+#dForm {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    background: #000;
+    z-index: 9999;
+    height: 100%;
 }
-#leftPanel{
-	width: 20%;
-	float: left;
-	background: #ccc;
-	height: 100%;
-	padding-top: 28px;
+
+#leftPanel {
+    width: 20%;
+    float: left;
+    background: #ccc;
+    height: 100%;
+    padding-top: 28px;
 
 }
+
 #rightPanel {
-	padding-top: 28px;
-	width: 80%;
-	float: right;
-	background: #fff;
+    padding-top: 28px;
+    width: 80%;
+    float: right;
+    background: #fff;
 }
-#closeDForm,#saveDForm,#UpdateDForm{
-	position: fixed;
-	top: 30px;
-	border: 1px solid #006505;
-	display: block;
-	padding: 2px 10px;
-	right: 5px;
-	background: tomato
+
+#closeDForm, #saveDForm, #UpdateDForm {
+    position: fixed;
+    top: 30px;
+    border: 1px solid #006505;
+    display: block;
+    padding: 2px 10px;
+    right: 5px;
+    background: tomato
 }
+
 #saveDForm,
-#UpdateDForm{
-	right: 80px;
-	background: lavender
+#UpdateDForm {
+    right: 80px;
+    background: lavender
 }
+
 #leftPanel > div, #rightPanel > div {
-	padding: 10px;
+    padding: 10px;
 
 }
+
 #dForm_lib {
-	display: none;
+    display: none;
 }
+
 .dFormElement {
-	border-bottom: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
 }
+
 #your_dForm .dFormElement:hover {
-	background: #f4f1f1;
-	cursor: move
+    background: #f4f1f1;
+    cursor: move
 }
+
 .dFormElement > div {
-	position: relative;
-	padding-bottom: 10px;
-	padding-top: 5px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
+
 .dFormElement .remove_element {
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-	font-size: 12px;
-	color: red;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    color: red;
 
 }
-.able_edit{
-	cursor: text;
-	display: inline;
+
+.able_edit {
+    cursor: text;
+    display: inline;
 }
-.lef_label{
-	width: 30%;
-	display: block;
-	float: left
+
+.lef_label {
+    width: 30%;
+    display: block;
+    float: left
 }
-.dFormElement textarea{
-	width: auto
+
+.dFormElement textarea {
+    width: auto
 }
 
 .dFormElement > div > div {
-	display: block;
-	margin-left: 30%;
+    display: block;
+    margin-left: 30%;
 }
+
 #rightPanel {
-	overflow: auto;
-	height: 95%;
+    overflow: auto;
+    height: 95%;
 }
-.option_element{
-	position: absolute;
-	right: 100px;
-	bottom: 10px;
-	font-size: 12px;
+
+.option_element {
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    font-size: 12px;
 }
-.dFormElement > div > div.option_popup{
-	position: absolute;
-	border: 1px #090909 dashed;
-	z-index: 99999;
-	opacity: 1;
-	right: 100px;
-	background: #ccc;
-	padding: 3px;
-	display: none;
+
+.dFormElement > div > div.option_popup {
+    position: absolute;
+    border: 1px #090909 dashed;
+    z-index: 99999;
+    opacity: 1;
+    right: 100px;
+    background: #ccc;
+    padding: 3px;
+    display: none;
 }
-.sortable-placeholder{
-	border: 1px darkred dashed;
+
+.sortable-placeholder {
+    border: 1px darkred dashed;
 }
+
 #dform_tools > li:hover {
-	border:  1px darkcyan dashed;
-	cursor: move;
+    border: 1px darkcyan dashed;
+    cursor: move;
 }
-.require_field_char{
-	color: red;
-	font-weight: bold;
-	padding-left: 10px
+
+.require_field_char {
+    color: red;
+    font-weight: bold;
+    padding-left: 10px
 }
-ul#dform_tools{
-	list-style: inside square;
+
+ul#dform_tools {
+    list-style: inside square;
 }
-ul#dform_tools li{
-	line-height: 25px;
-	height: 25px;
+
+ul#dform_tools li {
+    line-height: 25px;
+    height: 25px;
 }
-ul#dform_tools li a{
-	font-size: 14px
+
+ul#dform_tools li a {
+    font-size: 14px
+}
+
+.wp-admin .dform_admin_manage .right_align {
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.wp-admin .dform_admin_manage .del {
+    color: tomato
+}
+
+.wp-admin .dform_admin_manage table th.action_t {
+    text-align: right;
+    padding-right: 20px;
+    width: 30%
+}
+
+.wp-admin .dform_admin_manage th.subm {
+    width: 5%
+}
+
+
+#submisstion_d{
+    height: 200px;
+    overflow: auto;
+    width: 100%
+}
+#submisstion_t tr.active td{
+    background: #ccc;
+}
+#submisstion_t{
+    margin-top: 10px;
+}
+#submisstion_t thead tr{
+
+}
+#submisstion_t_detail{
+    margin-top: 20px;
+}
+#submisstion_t_detail td.data_s {
+    width: 70%;
+    background: #eee;
+
+}
+b {
+    color:#21759B
+}
+#submisstion_t td,
+#submisstion_t table td,
+#submisstion_t table th{
+    font-size: 10px
+}
+#submisstion_t table th{
+    padding: 0;
+}
+#submisstion_t .widefat th{
+    text-align: center
 }
